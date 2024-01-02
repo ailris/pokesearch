@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header,
+section,
+footer {
+    padding: 20px 0;
+}
+.about-pokemon {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #bbb;
+    border-radius:14px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-pokemon,
+.about-image {
+    flex: 1;
+    margin: 20px;
+    transition: opacity 0.5s ease;
+    /* Add transition for smooth effect */
+}
+
+.about-image:hover {
+    opacity: 0.5;
+    /* Reduce opacity to 50% when hovered */
+}
+
+.about-pokemon h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-pokemon p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.poke-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.poke-list,
+.poke-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.poke-card {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poke-card {
+    flex: 0 1 calc(25% - 20px);
+    /* Each card takes 25% of the container width with some spacing */
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    /* Use font-weight instead of font-style for bold */
+    background-color: black;
+    color: white;
+}
+.about-pokemon >h2 {
+    color: #ffa500;
+    font-style: bold;
+}
