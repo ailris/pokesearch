@@ -50,14 +50,14 @@ $(document).ready(function () {
         </div>
     `;
 
-        pokeList.append(card);
+        // Clear existing content before appending the new card
+        pokeList.html(card);
 
         const detailsButton = $(`[data-pokemon-name="${pokemon.name}"]`);
         detailsButton.on("click", function () {
             showPokemonDetails(pokemon);
         });
     }
-
 
     // Function to show Pokemon details in a modal
     function showPokemonDetails(pokemon) {
