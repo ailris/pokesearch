@@ -3,11 +3,16 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 960px;
+    min-width: 320px;
     margin: 0 auto;
+    flex: 1;
 }
 
 header,
@@ -15,13 +20,14 @@ section,
 footer {
     padding: 20px 0;
 }
+
 .about-pokemon {
     width: 60%;
     margin: auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 5px #bbb;
-    border-radius:14px;
+    border-radius: 14px;
 }
 
 .about-section {
@@ -36,12 +42,10 @@ footer {
     flex: 1;
     margin: 20px;
     transition: opacity 0.5s ease;
-    /* Add transition for smooth effect */
 }
 
 .about-image:hover {
     opacity: 0.5;
-    /* Reduce opacity to 50% when hovered */
 }
 
 .about-pokemon h2 {
@@ -61,6 +65,7 @@ footer {
     margin-right: auto;
     width: 100%;
 }
+
 .poke-card img {
     max-width: 100%;
     height: auto;
@@ -80,21 +85,21 @@ footer {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.poke-card {
     flex: 0 1 calc(25% - 20px);
-    /* Each card takes 25% of the container width with some spacing */
+    background-color: #f8f9fa;
 }
 
 footer {
     text-align: center;
     font-weight: bold;
-    /* Use font-weight instead of font-style for bold */
     background-color: black;
     color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-.about-pokemon >h2 {
+
+.about-pokemon>h2 {
     color: #ffa500;
-    font-style: bold;
+    font-weight: bold;
 }
