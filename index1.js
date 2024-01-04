@@ -2,7 +2,7 @@ $(document).ready(function () {
     const pokeListContainer = $(".poke-card-container");
 
     // Fetch Pokemon data from the API
-    $.get("https://pokeapi.co/api/v2/pokemon?limit=50", function (data) {
+    $.get("https://pokeapi.co/api/v2/pokemon?limit=20", function (data) {
         const pokemonList = data.results;
 
         // Display Pokemon cards
